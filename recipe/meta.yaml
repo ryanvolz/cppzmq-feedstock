@@ -1,6 +1,6 @@
 {% set name = "cppzmq" %}
-{% set version = "4.2.1" %}
-{% set sha256 = "11c699001659336c7d46779f714f3e9d15d63343cd2ae7c1905e4bf58907cef9" %}
+{% set version = "4.2.2" %}
+{% set sha256 = "3ef50070ac5877c06c6bb25091028465020e181bbfd08f110294ed6bc419737d" %}
 
 package:
   name: {{ name|lower }}
@@ -13,17 +13,15 @@ source:
 
 build:
   number: 0
-  skip: true  # [(win and py27) or (win and py<36)]
 
 requirements:
   build:
-    - python  # [win]
     - toolchain
     - cmake
-    - zeromq 4.2.1
+    - zeromq 4.2.3
 
   run:
-    - zeromq 4.2.1
+    - zeromq 4.2.3
 
 test:
   commands:

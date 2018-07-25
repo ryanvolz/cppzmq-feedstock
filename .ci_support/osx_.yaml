@@ -8,6 +8,6 @@ macos_min_version:
 - '10.9'
 pin_run_as_build:
   zeromq:
-    max_pin: x.x.x
+    max_pin: x.x
 zeromq:
-- 4.2.1
+- 4.2.5

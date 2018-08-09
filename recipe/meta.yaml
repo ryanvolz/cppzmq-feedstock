@@ -19,10 +19,10 @@ requirements:
     - cmake
     - {{ compiler('cxx') }}
   host:
-    - zeromq
+    - zeromq {{ version }}
 
   run:
-    - zeromq
+    - {{ pin_compatible('zeromq', max_pin='x.x') }}
 
 test:
   commands:
